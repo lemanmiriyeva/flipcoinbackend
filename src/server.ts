@@ -19,8 +19,10 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
     cors: {
-        origin: '*',
-    },
+        origin: "https://flipcoinui.vercel.app", // Frontend URL
+        methods: ["GET", "POST"],
+        credentials: true
+      }
 });
 
 app.use(cors());
