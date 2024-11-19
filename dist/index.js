@@ -15,7 +15,7 @@ const gameSessionManager_1 = require("./utils/gameSessionManager");
 require('dotenv').config();
 (0, db_1.connectDB)();
 const PORT = process.env.PORT || 3000;
-const FRONTEND_URL = process.env.FRONTEND_URL;
+const FRONTEND_URL = "https://flipcoinui.netlify.app/";
 console.log(`Frontend URL: ${FRONTEND_URL}`);
 const app = (0, express_1.default)();
 const corsOptions = {

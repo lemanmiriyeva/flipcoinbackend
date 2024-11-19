@@ -13,7 +13,7 @@ require('dotenv').config();
 connectDB();
 
 const PORT = process.env.PORT || 3000;
-const FRONTEND_URL = process.env.FRONTEND_URL;
+const FRONTEND_URL = "https://flipcoinui.netlify.app/";
 console.log(`Frontend URL: ${FRONTEND_URL}`);
 
 const app = express();
