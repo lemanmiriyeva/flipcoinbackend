@@ -18,7 +18,7 @@ console.log(`Frontend URL: ${FRONTEND_URL}`);
 
 const app = express();
 const corsOptions = {
-    origin: 'https://flip-coin-ui.vercel.app', // Your Vercel frontend
+    origin: 'https://flipcoinui.vercel.app', // Your Vercel frontend
     methods: ['GET', 'POST'],
     allowedHeaders: ['Content-Type'],
     credentials: true, // If you're using cookies or authorization headers
