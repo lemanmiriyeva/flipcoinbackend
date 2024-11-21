@@ -10,7 +10,7 @@ const token = process.env.TELEGRAM_BOT_TOKEN || 'YOUR_BOT_TOKEN';
 // Create a bot that uses 'polling' to fetch new updates
 const bot = new node_telegram_bot_api_1.default(token, { polling: true });
 // Your Web App URL
-const webAppUrl = process.env.FRONTEND_URL || 'https://flip-coin-ahzj9tyj7-nihads-projects-d7883703.vercel.app/';
+const webAppUrl = process.env.FRONTEND_URL || 'https://flipcoinui.vercel.app/';
 // Handle /start command
 bot.onText(/\/start/, (msg) => {
     const chatId = msg.chat.id;

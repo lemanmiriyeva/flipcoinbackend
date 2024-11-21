@@ -9,7 +9,7 @@ const token = process.env.TELEGRAM_BOT_TOKEN || 'YOUR_BOT_TOKEN';
 const bot = new TelegramBot(token, { polling: true });
 
 // Your Web App URL
-const webAppUrl = process.env.FRONTEND_URL || 'https://flip-coin-ahzj9tyj7-nihads-projects-d7883703.vercel.app/';
+const webAppUrl = process.env.FRONTEND_URL || 'https://flipcoinui.vercel.app/';
 
 // Handle /start command
 bot.onText(/\/start/, (msg) => {
